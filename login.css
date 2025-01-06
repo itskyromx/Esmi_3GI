@@ -1,0 +1,141 @@
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 85%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+header img.login{
+    height: 40px;
+    position: relative;
+    left: 482px;
+    top: 25px;
+}
+
+header img.search{
+    height: 30px;
+    position: relative;
+    left: 547px;
+    top: 30px;
+}
+
+header img.cart{
+    height: 40px;
+    position: relative;
+    left: 610px;
+    top: 25px;
+}
+
+header img.logo {
+    height: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-container ul li a {
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #ff9900;
+}
+
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social:hover {
+    color: #ff9900;
+}
