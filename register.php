@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro | Stackz Clothing</title>
     <link rel="stylesheet" type="text/css" href="login.css">
-    <link rel="icon" type="image\x-icon" href="image/favicon.ico">
+    <link rel="icon" type="image\x-icon" href="icons/favicon.ico">
 </head>
 
 <body>
@@ -15,24 +15,24 @@
             <nav>
                 <ul>
                 <a href=<?php echo isset($_SESSION['id']) ? 'dashboard.php' : 'login.php'; ?>>
-                    <img src="image/login_icon.png" alt="Login" class="login">
+                    <img src="icons/login_icon.png" alt="Login" class="login">
                 </a>
                 </ul>
                 
                 <ul>
                 <a href="#">
-                    <img src="image/search_icon.png" alt="Search" class="search">
+                    <img src="icons/search_icon.png" alt="Search" class="search">
                 </a>
                 </ul>
 
                 <ul>
                 <a href="#">
-                    <img src="image/cart_icon.png" alt="Cart" class="cart">
+                    <img src="icons/cart_icon.png" alt="Cart" class="cart">
                 </a>
                 </ul>
             </nav>
             <a href="index.php">
-                <img src="image/stackz_logo.png" alt="Logo" class="logo">
+                <img src="icons/stackz_logo.png" alt="Logo" class="logo">
             </a>
         </div>
     </header>

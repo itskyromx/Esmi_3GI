@@ -12,7 +12,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>Stackz Clothing</title>
-    <link rel="icon" type="image\x-icon" href="image/favicon.ico">
+    <link rel="icon" type="image\x-icon" href="icons/favicon.ico">
 </head>
 <body>
     <header>
@@ -20,24 +20,24 @@ session_start();
             <nav>
                 <ul>
                 <a href=<?php echo isset($_SESSION['id']) ? 'dashboard.php' : 'login.php'; ?>>
-                    <img src="image/login_icon.png" alt="Login" class="login">
+                    <img src="icons/login_icon.png" alt="Login" class="login">
                 </a>
                 </ul>
                 
                 <ul>
                 <a href="#">
-                    <img src="image/search_icon.png" alt="Search" class="search">
+                    <img src="icons/search_icon.png" alt="Search" class="search">
                 </a>
                 </ul>
 
                 <ul>
                 <a href="#">
-                    <img src="image/cart_icon.png" alt="Cart" class="cart">
+                    <img src="icons/cart_icon.png" alt="Cart" class="cart">
                 </a>
                 </ul>
             </nav>
             <a href="index.php">
-                <img src="image/stackz_logo.png" alt="Logo" class="logo">
+                <img src="icons/stackz_logo.png" alt="Logo" class="logo">
             </a>
         </div>
     </header>
@@ -58,24 +58,145 @@ session_start();
         <div class="container">
             <h2>Produtos</h2>
             <div class="grid">
-                <?php
-                // Simulação de produtos dinâmicos
-                $produtos = [
-                    ["nome" => "Shape Pro Model", "preco" => "R$ 299,90"],
-                    ["nome" => "Camiseta Skate Co.", "preco" => "R$ 99,90"],
-                    ["nome" => "Boné Original", "preco" => "R$ 79,90"],
-                ];
-
-                foreach ($produtos as $produto) {
-                    echo "<div class='produto'>";
-                    echo "<h3>{$produto['nome']}</h3>";
-                    echo "<p>{$produto['preco']}</p>";
-                    echo "<a href='#' class='btn'>Comprar</a>";
-                    echo "</div>";
-                }
-                ?>
-            </div>
+            <div class="product-center">
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="./images/shirt-1.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html">Brown Mitchell Shirt</a>
+            <h4>45€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
         </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/hoodie.png" alt="" />
+            </a>
+          </div>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Team AOP Hoodie - Roxo</a>
+            <h4>70€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/jacket-1.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Carhartt Helson Jacket - Preto</a>
+            <h4>115€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/tshirt-1.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Ringer Tee - Cloud White/Navy</a>
+            <h4>40€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/jeans-1.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Spider Denim Jeans - Castanho</a>
+            <h4>110€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/jorts-1.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Garyville Jorts - Azul</a>
+            <h4>60€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/socks-1.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Meias com Logo - Brancas</a>
+            <h4>14€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/jeans-2.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Big Boy Jeans - Vermelho</a>
+            <h4>135€</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="sobre" class="sobre">
