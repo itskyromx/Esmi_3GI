@@ -11,10 +11,13 @@ $sql = "SELECT * FROM users WHERE email = '$email'";
 $result = $conn->query($sql);
 
 if(isset($_POST["login"])){
+    //Verifica se todos os espaços estão preenchidos
     if(!empty($_POST["email"]) && !empty($_POST["password"])){
-        if($result->num_rows > 0){//IF - Verifica se a conta existe através do email
+        //Verifica se a conta existe através do email
+        if($result->num_rows > 0){ 
             $user = $result->fetch_assoc();
-            if(password_verify($password,$user['password'])){//IF - Verifica se a palavra passe está certa
+            //Verifica se a palavra passe está certa
+            if(password_verify($password,$user['password'])){ 
                 header("Location: index.php");
             }
             else{
@@ -26,7 +29,7 @@ if(isset($_POST["login"])){
         }
     }
     else{
-        echo "Preenche os espaços vazios"; 
+        echo "Preenche os espaços vazios!"; 
     }
 }
 $_SESSION["id"] = $id;

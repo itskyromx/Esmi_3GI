@@ -12,39 +12,58 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>Stackz Clothing</title>
-    <link rel="icon" type="image\x-icon" href="icons/favicon.ico">
+    <link rel="icon" href="icons/favicon.ico">
 </head>
+
 <body>
+    <!-- HEADER -->
     <header>
         <class="container">
             <nav>
+              <!-- ICON LOGIN -->
                 <ul>
                 <a href=<?php echo isset($_SESSION['id']) ? 'dashboard.php' : 'login.php'; ?>>
                     <img src="icons/login_icon.png" alt="Login" class="login">
                 </a>
                 </ul>
-                
+
+                <!-- ICON SEARCH -->
                 <ul>
                 <a href="#">
                     <img src="icons/search_icon.png" alt="Search" class="search">
                 </a>
                 </ul>
 
+                <!-- ICON CART -->
                 <ul>
                 <a href="#">
                     <img src="icons/cart_icon.png" alt="Cart" class="cart">
                 </a>
                 </ul>
             </nav>
+
+            <!-- LOGO -->
             <a href="index.php">
                 <img src="icons/stackz_logo.png" alt="Logo" class="logo">
             </a>
-        </div>
-    </header>
 
+            <!-- SEC VESTUÁRIO -->
+            <ul>
+              <a href="vest.php" class="vestuario" >VESTUÁRIO</a>
+            </ul>
+
+            <!-- SEC ACESSÓRIOS -->
+            <ul>
+              <a href="acess.php" class="acess" >ACESSÓRIOS</a>
+            </ul>
+    </header>
+    <!-- HEADER -->
+
+    <!-- VIDEO -->
     <video autoplay loop playsinline muted id="VideoFixe">
         <source src="videos/davidcoco.mp4" type="video/mp4">
     </video>
+    <!-- VIDEO -->
 
     <section id="home" class="hero">
         <div class="container">
@@ -54,6 +73,7 @@ session_start();
         </div>
     </section>
 
+    <!-- PRODUTOS -->
     <section id="produtos" class="produtos">
         <div class="container">
             <h2>Produtos</h2>
@@ -61,13 +81,13 @@ session_start();
             <div class="product-center">
         <div class="product-item">
           <div class="overlay">
-            <a href="productDetails.html" class="product-thumb">
+            <a href="" class="product-thumb">
               <img src="./images/shirt-1.png" alt="" />
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
-            <a href="productDetails.html">Brown Mitchell Shirt</a>
+            <span>SHIRTS</span>
+            <a href="" class="hyperlink">Brown Mitchell Shirt</a>
             <h4>45€</h4>
           </div>
           <ul class="icons">
@@ -84,7 +104,7 @@ session_start();
           </div>
 
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>HOODIES</span>
             <a href="">Team AOP Hoodie - Roxo</a>
             <h4>70€</h4>
           </div>
@@ -101,7 +121,7 @@ session_start();
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>JACKETS</span>
             <a href="">Carhartt Helson Jacket - Preto</a>
             <h4>115€</h4>
           </div>
@@ -118,7 +138,7 @@ session_start();
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>SHIRTS</span>
             <a href="">Ringer Tee - Cloud White/Navy</a>
             <h4>40€</h4>
           </div>
@@ -135,7 +155,7 @@ session_start();
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>JEANS</span>
             <a href="">Spider Denim Jeans - Castanho</a>
             <h4>110€</h4>
           </div>
@@ -152,7 +172,7 @@ session_start();
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>JORTS</span>
             <a href="">Garyville Jorts - Azul</a>
             <h4>60€</h4>
           </div>
@@ -169,7 +189,7 @@ session_start();
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>SOCKS</span>
             <a href="">Meias com Logo - Brancas</a>
             <h4>14€</h4>
           </div>
@@ -186,7 +206,7 @@ session_start();
             </a>
           </div>
           <div class="product-info">
-            <span>MEN'S CLOTHES</span>
+            <span>JEANS</span>
             <a href="">Big Boy Jeans - Vermelho</a>
             <h4>135€</h4>
           </div>
@@ -198,13 +218,16 @@ session_start();
         </div>
       </div>
     </section>
+    <!-- PRODUTOS -->
 
+    <!-- SOBRE -->
     <section id="sobre" class="sobre">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Somos apaixonados pelo skate e dedicados a oferecer produtos de alta qualidade para skatistas de todos os níveis.</p>
+            <p></p>
         </div>
     </section>
+    <!-- SOBRE -->
 
     <section id="contato" class="contato">
         <div class="container">
@@ -218,10 +241,16 @@ session_start();
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Stackz Clothing. Todos os direitos reservados.</p>
+        <div class="footer-container">
+            <p>&copy; 2025 Stackz Clothing. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="privacy.php">Política de Privacidade</a></li>
+                <li><a href="terms.php">Termos de Uso</a></li>
+            </ul>
         </div>
     </footer>
+    <!-- FOOTER -->
 </body>
 </html>

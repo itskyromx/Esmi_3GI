@@ -1,3 +1,4 @@
+/* BODY */
 body, h1, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -38,24 +39,23 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 button {
-    background: #333;
+    background: #000000;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
-button:hover {
-    background: #555;
+button[type="submit"]{
+    font-weight: 200;
 }
 
 /* HEADER */
 header {
     background: #fff;
     color: #fff;
-    padding: 1rem 0;
+    padding: 0.1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,26 +65,46 @@ header {
 header img.login{
     height: 40px;
     position: relative;
-    left: 482px;
-    top: 25px;
+    left: 442px;
+    top: 55px;
 }
 
 header img.search{
     height: 30px;
     position: relative;
-    left: 547px;
-    top: 30px;
+    left: 507px;
+    top: 60px;
 }
 
 header img.cart{
     height: 40px;
     position: relative;
-    left: 610px;
-    top: 25px;
+    left: 570px;
+    top: 55px;
 }
 
 header img.logo {
     height: 80px;
+    position: relative;
+    top: 30px;
+}
+
+header .vestuario {
+    text-decoration: none;
+    font-weight: 1000;  
+    color: #000000;
+    position: relative;
+    right: 480px;
+    bottom: 23px;
+}
+
+header .acess {
+  text-decoration: none;
+  font-weight: 1000;  
+  color: #000000;
+  position: relative;
+  right: 325px;
+  bottom: 50px;
 }
 
 header nav ul {
@@ -95,7 +115,7 @@ header nav ul {
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0;  
 }
 
 /* FOOTER */
@@ -125,17 +145,6 @@ footer {
 }
 
 
-.social-container {
+.space {
     margin: 20px 0;
-}
-
-.social {
-    margin: 0 10px;
-    font-size: 20px;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.social:hover {
-    color: #ff9900;
 }
